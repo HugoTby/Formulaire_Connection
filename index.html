@@ -1,0 +1,60 @@
+<body>
+
+    <!-- Form Box **Se connecter** ( 01 )-->
+
+
+    <div class="form-box">
+
+        <h1>Connectez-vous ici</h1>
+
+        <div class="input-box">
+            <i class="fa fa-envelope"></i>
+            <input type="email" placeholder="Adresse mail">
+        </div>
+
+        <div class="input-box">
+            <i class="fa fa-key"></i>
+            <input type="password" placeholder="Mot de passe" id="myInput">
+            <span class="eye" onclick="myFunction()">
+            <i id="hide1" class="fa-solid fa-eye"></i>
+            <i id="hide2" class="fa-solid fa-eye-slash"></i>
+            </span>
+        </div>
+
+        <div>
+        <button type="button" class="login-btn" onClick="window.location.href='index2.html'" ><abbr title="Fonctionnalité indisponible" lang="en">Se connecter</abbr> </button>
+        </div>
+
+    
+
+    
+
+
+    </div>
+
+ 
+    <!-- Script N*JS-01 -> hide mdp -->
+
+
+    <script>
+        function myFunction(){
+            var x = document.getElementById("myInput")
+            var y = document.getElementById("hide1")
+            var z = document.getElementById("hide2")
+
+            if(x.type === 'password'){
+                x.type = "text";
+                y.style.display = "block";
+                z.style.display = "none";
+            }
+            else{
+                x.type = "password";
+                y.style.display = "none";
+                z.style.display = "block";
+            }
+        }
+    </script>
+
+
+    
+</body>
